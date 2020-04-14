@@ -1,0 +1,344 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "AudioStick"
+Date "2020-04-14"
+Rev "3"
+Comp "ALMic"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Audio:PCM5102 U2
+U 1 1 5E95530E
+P 6900 2000
+F 0 "U2" H 6900 2781 50  0000 C CNN
+F 1 "PCM5102" H 6900 2690 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6850 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/pcm5102.pdf" H 6850 2750 50  0001 C CNN
+	1    6900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5E956A66
+P 6800 2900
+F 0 "#PWR05" H 6800 2650 50  0001 C CNN
+F 1 "GND" H 6805 2727 50  0000 C CNN
+F 2 "" H 6800 2900 50  0001 C CNN
+F 3 "" H 6800 2900 50  0001 C CNN
+	1    6800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2900 6800 2800
+Wire Wire Line
+	6800 2800 6900 2800
+Wire Wire Line
+	7000 2800 7000 2700
+Connection ~ 6800 2800
+Wire Wire Line
+	6800 2800 6800 2700
+Wire Wire Line
+	6900 2700 6900 2800
+Connection ~ 6900 2800
+Wire Wire Line
+	6900 2800 7000 2800
+$Comp
+L Connector:Raspberry_Pi_2_3 J2
+U 1 1 5E957DDE
+P 2200 2700
+F 0 "J2" H 2200 4181 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2200 4090 50  0000 C CNN
+F 2 "" H 2200 2700 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2200 2700 50  0001 C CNN
+	1    2200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E95A3C5
+P 1800 4200
+F 0 "#PWR04" H 1800 3950 50  0001 C CNN
+F 1 "GND" H 1805 4027 50  0000 C CNN
+F 2 "" H 1800 4200 50  0001 C CNN
+F 3 "" H 1800 4200 50  0001 C CNN
+	1    1800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4200 1800 4100
+Wire Wire Line
+	1800 4100 1900 4100
+Wire Wire Line
+	2500 4100 2500 4000
+Connection ~ 1800 4100
+Wire Wire Line
+	1800 4100 1800 4000
+Wire Wire Line
+	2400 4000 2400 4100
+Connection ~ 2400 4100
+Wire Wire Line
+	2400 4100 2500 4100
+Wire Wire Line
+	2300 4000 2300 4100
+Connection ~ 2300 4100
+Wire Wire Line
+	2300 4100 2400 4100
+Wire Wire Line
+	2200 4000 2200 4100
+Connection ~ 2200 4100
+Wire Wire Line
+	2200 4100 2300 4100
+Wire Wire Line
+	2100 4000 2100 4100
+Connection ~ 2100 4100
+Wire Wire Line
+	2100 4100 2200 4100
+Wire Wire Line
+	2000 4000 2000 4100
+Connection ~ 2000 4100
+Wire Wire Line
+	2000 4100 2100 4100
+Wire Wire Line
+	1900 4000 1900 4100
+Connection ~ 1900 4100
+Wire Wire Line
+	1900 4100 2000 4100
+NoConn ~ 2300 1400
+NoConn ~ 2400 1400
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5E95CBBE
+P 1700 5300
+F 0 "J1" H 1757 5767 50  0000 C CNN
+F 1 "USB_B_Micro" H 1757 5676 50  0000 C CNN
+F 2 "" H 1850 5250 50  0001 C CNN
+F 3 "~" H 1850 5250 50  0001 C CNN
+	1    1700 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E95EB87
+P 1600 5900
+F 0 "#PWR02" H 1600 5650 50  0001 C CNN
+F 1 "GND" H 1605 5727 50  0000 C CNN
+F 2 "" H 1600 5900 50  0001 C CNN
+F 3 "" H 1600 5900 50  0001 C CNN
+	1    1600 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5700 1600 5800
+Wire Wire Line
+	1600 5800 1700 5800
+Wire Wire Line
+	1700 5800 1700 5700
+Connection ~ 1600 5800
+Wire Wire Line
+	1600 5800 1600 5900
+$Comp
+L Regulator_Linear:MCP1700-3302E_SOT23 U1
+U 1 1 5E960478
+P 7200 5550
+F 0 "U1" H 7200 5792 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 7200 5701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7200 5775 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 7200 5550 50  0001 C CNN
+	1    7200 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E9623EB
+P 7200 6050
+F 0 "#PWR03" H 7200 5800 50  0001 C CNN
+F 1 "GND" H 7205 5877 50  0000 C CNN
+F 2 "" H 7200 6050 50  0001 C CNN
+F 3 "" H 7200 6050 50  0001 C CNN
+	1    7200 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5850 7200 6050
+$Comp
+L Device:C C1
+U 1 1 5E962DD6
+P 6700 5800
+F 0 "C1" H 6815 5846 50  0000 L CNN
+F 1 "100n" H 6815 5755 50  0000 L CNN
+F 2 "perfect0402:perfect0402_C" H 6738 5650 50  0001 C CNN
+F 3 "~" H 6700 5800 50  0001 C CNN
+	1    6700 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E9649AB
+P 6700 6050
+F 0 "#PWR01" H 6700 5800 50  0001 C CNN
+F 1 "GND" H 6705 5877 50  0000 C CNN
+F 2 "" H 6700 6050 50  0001 C CNN
+F 3 "" H 6700 6050 50  0001 C CNN
+	1    6700 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5950 6700 6050
+Wire Wire Line
+	6900 5550 6700 5550
+Wire Wire Line
+	6700 5550 6700 5650
+$Comp
+L Device:C C?
+U 1 1 5E966099
+P 7650 5800
+F 0 "C?" H 7765 5846 50  0000 L CNN
+F 1 "100n" H 7765 5755 50  0000 L CNN
+F 2 "perfect0402:perfect0402_C" H 7688 5650 50  0001 C CNN
+F 3 "~" H 7650 5800 50  0001 C CNN
+	1    7650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E966219
+P 7650 6050
+F 0 "#PWR?" H 7650 5800 50  0001 C CNN
+F 1 "GND" H 7655 5877 50  0000 C CNN
+F 2 "" H 7650 6050 50  0001 C CNN
+F 3 "" H 7650 6050 50  0001 C CNN
+	1    7650 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5550 7650 5550
+Wire Wire Line
+	7650 5550 7650 5650
+Wire Wire Line
+	7650 6050 7650 5950
+Wire Wire Line
+	6400 2100 6300 2100
+Wire Wire Line
+	6300 2100 6300 2200
+$Comp
+L power:GND #PWR?
+U 1 1 5E967D23
+P 6300 2900
+F 0 "#PWR?" H 6300 2650 50  0001 C CNN
+F 1 "GND" H 6305 2727 50  0000 C CNN
+F 2 "" H 6300 2900 50  0001 C CNN
+F 3 "" H 6300 2900 50  0001 C CNN
+	1    6300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2200 6300 2200
+Connection ~ 6300 2200
+Wire Wire Line
+	6300 2200 6300 2400
+Wire Wire Line
+	6400 2400 6300 2400
+Connection ~ 6300 2400
+Wire Wire Line
+	6300 2400 6300 2900
+Wire Wire Line
+	6400 1900 6300 1900
+Wire Wire Line
+	6300 1900 6300 2100
+Connection ~ 6300 2100
+Wire Wire Line
+	7400 1600 8000 1600
+Wire Wire Line
+	7400 1700 8000 1700
+Text Label 8000 1600 0    50   ~ 0
+OUTL_RAW
+Text Label 8000 1700 0    50   ~ 0
+OUTR_RAW
+$Comp
+L Device:C C?
+U 1 1 5E97161A
+P 8000 2650
+F 0 "C?" H 8115 2696 50  0000 L CNN
+F 1 "100n" H 8115 2605 50  0000 L CNN
+F 2 "perfect0402:perfect0402_C" H 8038 2500 50  0001 C CNN
+F 3 "~" H 8000 2650 50  0001 C CNN
+	1    8000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2400 8000 2400
+Wire Wire Line
+	8000 2400 8000 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5E973087
+P 8000 2900
+F 0 "#PWR?" H 8000 2650 50  0001 C CNN
+F 1 "GND" H 8005 2727 50  0000 C CNN
+F 2 "" H 8000 2900 50  0001 C CNN
+F 3 "" H 8000 2900 50  0001 C CNN
+	1    8000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2900 8000 2800
+$Comp
+L Device:C C?
+U 1 1 5E974045
+P 7650 2050
+F 0 "C?" H 7765 2096 50  0000 L CNN
+F 1 "C" H 7765 2005 50  0000 L CNN
+F 2 "" H 7688 1900 50  0001 C CNN
+F 3 "~" H 7650 2050 50  0001 C CNN
+	1    7650 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1900 7650 1900
+Wire Wire Line
+	7400 2200 7650 2200
+$Comp
+L Device:R R?
+U 1 1 5E9762D8
+P 1850 6750
+F 0 "R?" V 1750 6650 50  0000 C CNN
+F 1 "470" V 1850 6750 50  0000 C CNN
+F 2 "perfect0402:perfect0402_R" V 1780 6750 50  0001 C CNN
+F 3 "~" H 1850 6750 50  0001 C CNN
+F 4 "Panasonic" V 1850 6750 50  0001 C CNN "Manufacturer"
+F 5 "ERA2AED471X" V 1850 6750 50  0001 C CNN "Manufacturer PN"
+	1    1850 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:AudioJack3_Switch J?
+U 1 1 5E9794D1
+P 3100 6750
+F 0 "J?" H 2820 6750 50  0000 R CNN
+F 1 "AudioJack3_Switch" H 2820 6659 50  0000 R CNN
+F 2 "" H 3100 6750 50  0001 C CNN
+F 3 "~" H 3100 6750 50  0001 C CNN
+	1    3100 6750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E97CAD1
+P 1850 6950
+F 0 "R?" V 1750 6850 50  0000 C CNN
+F 1 "470" V 1850 6950 50  0000 C CNN
+F 2 "perfect0402:perfect0402_R" V 1780 6950 50  0001 C CNN
+F 3 "~" H 1850 6950 50  0001 C CNN
+F 4 "Panasonic" V 1850 6950 50  0001 C CNN "Manufacturer"
+F 5 "ERA2AED471X" V 1850 6950 50  0001 C CNN "Manufacturer PN"
+	1    1850 6950
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
