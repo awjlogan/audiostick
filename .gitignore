@@ -5,3 +5,6 @@
 *.elf
 *.*#*
 datasheets/
+*cache.lib
+fp-*
+*.*bak
