@@ -181,7 +181,7 @@ U 1 1 5E9794D1
 P 3100 6950
 F 0 "J3" H 2820 6858 50  0000 R CNN
 F 1 "AudioJack3_Switch" H 2820 6949 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_PJ311_Horizontal" H 3100 6950 50  0001 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3524-SMT_Horizontal" H 3100 6950 50  0001 C CNN
 F 3 "~" H 3100 6950 50  0001 C CNN
 	1    3100 6950
 	-1   0    0    1   
@@ -839,17 +839,6 @@ F 3 "" H 9450 3000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9450 3100 9450 3000
-$Comp
-L Memory_EEPROM:AT24CS01-STUM U5
-U 1 1 5EB564E0
-P 10300 3700
-F 0 "U5" H 9970 3746 50  0000 R CNN
-F 1 "24AA025UID" H 9970 3655 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 10300 3700 50  0001 C CNN
-F 3 "https://www.mouser.co.uk/datasheet/2/268/20005202A-477261.pdf" H 10300 3700 50  0001 C CNN
-	1    10300 3700
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	10300 3100 10300 3400
 $Comp
@@ -1674,4 +1663,15 @@ Text Label 9000 4800 0    50   ~ 0
 3V3M
 Text Label 5000 2800 0    50   ~ 0
 3V3M
+$Comp
+L Memory_EEPROM:AT24CS01-STUM U5
+U 1 1 5EB2F683
+P 10300 3700
+F 0 "U5" H 9970 3746 50  0000 R CNN
+F 1 "AT24CS01-STUM" H 9970 3655 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 10300 3700 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8815-SEEPROM-AT24CS01-02-Datasheet.pdf" H 10300 3700 50  0001 C CNN
+	1    10300 3700
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
